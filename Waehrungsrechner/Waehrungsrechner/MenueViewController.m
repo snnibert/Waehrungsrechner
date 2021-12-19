@@ -35,6 +35,8 @@
     [decimalLabel setText:@"Nachkommastellen"];
     [rootView addSubview:decimalLabel];
     
+    
+    
     _isNotFirstStartup = [[NSUserDefaults standardUserDefaults] boolForKey:@"firstStartUp"];
     if (_isNotFirstStartup == true)
         _decimalPlaces = [[NSUserDefaults standardUserDefaults] integerForKey:@"decimalPlaces"];
